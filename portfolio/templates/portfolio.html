@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">ポートフォリオサイト</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">プロファイル <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">etc</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+    </nav>
+
+    <div id="profile" class="container pt-5 d-flex flex-column text-center">
+        <p>Roba99</p>
+    </div>
+    <div id="works" class="bg-light">
+        <div class="container">
+            <div class="row">
+            <div id="sworks" class="container pt-5 d-flex flex-column text-center">
+                <p>Works</p>
+            </div>
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+          {% load static %}
+        <img src="{% static 'images/animal_ai.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">動物画像判定アプリ</h5>
+            <p class="card-text">Animal Object Recognition</p>
+        </div>
+        <div class="card-body">
+            <a href="{% url 'detection:index' %}" class="card-link">Service Link</a>
+        </div>
+        </div>
+    </div>
+     <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          {% load static %}
+        <img src="{% static 'images/out.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">顔切り抜きアプリ</h5>
+            <p class="card-text">Face Cut Out</p>
+        </div>
+        <div class="card-body bottom">
+            <a href="" class="card-link ">Service Link</a>
+        </div>
+        </div>
+     </div>
+    <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          {% load static %}
+        <img src="{% static 'images/weather.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">天気予測アプリ</h5>
+            <p class="card-text">Weather Predict</p>
+        </div>
+        <div class="card-body bottom">
+            <a href="{% url 'weather:index'%}" class="card-link ">Service Link</a>
+        </div>
+        </div>
+     </div>
+
+    </div>
+        </div>
+    </div>
+  <footer id="footer" class="mt-3 bg-dark text-right text-white-50 fixed-bottom margin-bottom" style="height: 3rem">
+        <p>roba99</p>
+  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  </body>
+</html>
